@@ -1,0 +1,42 @@
+.actionBar{
+    margin-top: calc(0px - 3.375rem / 2);
+}
+
+.todoForm {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.todoForm input{
+    background: var(--gray-500);
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--gray-300);
+    line-height: 1.5rem;
+}
+
+.todoForm input:focus{
+    color: var(--gray-100);
+}
+
+.todoForm button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: var(--blue-500);
+    color: var(--gray-100);
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+
+    transition: background-color 0.1s;
+}
+
+.todoForm button:hover{
+    background: var(--blue-300);
+}
+

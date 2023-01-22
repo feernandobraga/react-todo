@@ -1,0 +1,31 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.todoPanel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoPanel span {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.todoCreated{
+    color: var(--blue-300);
+}
+
+.todoCompleted{
+    color: var(--purple-300);
+}
+
+.todoCounter{
+    margin-left: 0.5rem;
+    padding: 2px 8px 2px 8px;
+    background: var(--gray-400);
+    border-radius: 999px;
+}
+

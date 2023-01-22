@@ -1,7 +1,6 @@
 import styles from './Task.module.css'
 import {Trash} from 'phosphor-react'
 import {todo} from "../App";
-import {ChangeEvent, MouseEventHandler} from "react";
 
 interface ITaskProps {
 	todo : todo
@@ -12,7 +11,7 @@ interface ITaskProps {
 export function Task({todo, onTaskComplete, onDeleteTodo} : ITaskProps){
 	
 	
-	function handleOnTaskChanged(event: ChangeEvent<HTMLInputElement>){
+	function handleOnTaskChanged(){
 		onTaskComplete(todo.id)
 	}
 	

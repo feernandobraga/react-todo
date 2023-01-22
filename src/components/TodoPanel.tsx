@@ -2,7 +2,6 @@ import styles from './TodoPanel.module.css'
 import {EmptyList} from "./EmptyList";
 import {Task} from "./Task";
 import {todo} from "../App";
-import {useState} from "react";
 
 interface ITodoPanelProps {
 	todoList: todo[]
@@ -11,8 +10,6 @@ interface ITodoPanelProps {
 }
 
 export function TodoPanel({todoList, onDeleteTodo, onCompleteTodo} : ITodoPanelProps){
-	
-	const [countOfCompletedTodos, setCountOfCompletedTodos] = useState(0)
 	
 	const todoSize = todoList.length
 	

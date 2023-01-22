@@ -5,7 +5,7 @@ export function Header() {
 	
 	return (
 		<div className={styles.header}>
-			<img src={todoLogo}/>
+			<img src={todoLogo} alt='logo'/>
 		</div>
 	);
 	
